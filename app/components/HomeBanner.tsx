@@ -116,16 +116,13 @@ const HomeBanner = () => {
                     alt='image'
                     width={150}
                     height={150}
-
                 />
                 <Image
                     src={image_url}
                     alt='image'
                     width={200}
                     height={200}
-
                 />
-
             </div>
             <div className={styles.title}>
 
