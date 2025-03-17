@@ -1,0 +1,43 @@
+/* styles/ContactSection.module.scss */
+.contact {
+    // existing styles...
+
+    .contactForm {
+        margin-top: 2rem;
+        padding: 2rem;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+    }
+
+    .formGroup {
+        margin-bottom: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 0.8rem;
+        margin-top: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button.mainbtn {
+        margin-top: 1rem;
+        padding: 0.8rem 2rem;
+        background-color: #0070f3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #005bb5;
+        }
+    }
+}
