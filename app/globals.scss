@@ -20,6 +20,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--darkgreen);
   color: var(--foreground);
@@ -27,6 +31,7 @@ body {
   padding: 0;
   margin: 0;
   color: white;
+
 }
 
 h2 {
@@ -90,4 +95,60 @@ h2 {
 
 main {
   overflow: hidden;
+}
+
+
+section.stacked {
+  section {
+    padding: 20px;
+  }
+
+  section:nth-child(odd) {
+    >div {
+      flex-direction: row-reverse;
+
+      img {
+        transform: rotate(357deg);
+      }
+    }
+  }
+}
+
+header {
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  >div {
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .mainbtn {
+      font-size: 16px;
+      padding: 13px 14px;
+      height: auto;
+    }
+
+    a svg {
+      fill: white;
+      width: 20px;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #0a0a0a;
+  padding: 25px;
 }

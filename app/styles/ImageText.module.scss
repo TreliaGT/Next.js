@@ -5,25 +5,36 @@
 
   >div {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 20px;
 
     >div {
-      max-width: 700px;
+      width: 45%;
+      align-content: center;
+      padding: 25px;
 
-      h2,
-      h1 {
-        font-size: 5em;
+      h2 {
+        font-size: 3em;
       }
 
-      &.right {
-        text-align: end;
+      img {
+        border: 10px solid white;
+        border-bottom: 30px solid white;
+        transform: rotate(11deg);
       }
+    }
+  }
 
-      .mainbtn {
-        float: right;
-      }
+  @media(max-width:1200px) {
+    padding: 25px;
+
+    >div>div {
+      width: 100%;
+    }
+
+    .left {
+      padding-bottom: 60px;
     }
   }
 }

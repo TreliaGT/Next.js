@@ -1,0 +1,64 @@
+.tag {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  overflow-x: hidden;
+  font-size: 3rem;
+
+  .top {
+    width: fit-content;
+    white-space: nowrap;
+    animation: top 10s linear 0.5s infinite;
+  }
+
+  .bottom {
+    width: fit-content;
+    white-space: nowrap;
+    animation: bottom 10s linear 0.5s infinite;
+  }
+
+
+}
+
+
+
+@keyframes top {
+  0% {
+    margin-right: 0%;
+    opacity: 0%;
+  }
+
+  10% {
+    opacity: 100%;
+  }
+
+  90% {
+    opacity: 100%;
+  }
+
+  100% {
+    margin-right: -100%;
+    opacity: 0%;
+  }
+}
+
+@keyframes bottom {
+  0% {
+    margin-left: 0%;
+    opacity: 0%;
+  }
+
+  10% {
+    opacity: 100%;
+  }
+
+  90% {
+    opacity: 100%;
+  }
+
+  100% {
+    margin-left: -100%;
+    opacity: 0%;
+  }
+}

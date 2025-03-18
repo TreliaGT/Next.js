@@ -124,6 +124,9 @@ const HomeBanner = () => {
                     height={200}
                 />
             </div>
+
+
+
             <div className={styles.title}>
 
                 <h1>Floating Images Gallery</h1>
@@ -131,6 +134,7 @@ const HomeBanner = () => {
                 <Link href="/" className="mainbtn"><span>Let's Chat!</span></Link>
 
             </div>
+            <div className={styles.fade}></div>
         </section>
     )
 
