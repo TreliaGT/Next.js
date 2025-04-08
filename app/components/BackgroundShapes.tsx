@@ -48,7 +48,7 @@ const Shape = ({ type, position, rotation, color }) => {
 
 const RandomShapes = ({ count = 100 }) => {
     const shapes = useMemo(() => {
-        const types = ["box", "sphere", "cone"];
+        const types = ["sphere"];
         return new Array(count).fill().map(() => ({
             type: types[Math.floor(Math.random() * types.length)],
             position: [
