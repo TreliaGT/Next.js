@@ -3,7 +3,7 @@
   --foreground: #171717;
   --darkgreen: rgb(12, 53, 36);
   --green: rgb(24, 110, 74);
-  --orange: #fc894d
+  --orange: #fc894d;
 }
 
 @theme inline {
@@ -37,6 +37,15 @@ body {
 h2 {
   font-size: 3em;
   margin: 0px 10px;
+}
+
+.relative {
+  position: relative;
+
+  section {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .mainbtn {

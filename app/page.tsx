@@ -5,6 +5,7 @@ import ImageText from "./components/ImageText";
 import ContactSection from "./components/ContactSection";
 import Tags from "./components/tags";
 import useFadeIn from './hooks/useFadeIn';
+import BackgroundShapes from "./components/BackgroundShapes";
 
 export default function Home() {
   useFadeIn();
@@ -12,13 +13,16 @@ export default function Home() {
   return (
     <main>
       <HomeBanner />
-      <TitleText />
-      <section className="stacked">
-        <ImageText />
-        <ImageText />
-      </section>
-      <Tags />
-      <ContactSection />
+      <div className="relative">
+        <TitleText />
+        {/* <section className="stacked">
+          <ImageText />
+          <ImageText />
+        </section> */}
+        <Tags />
+        <ContactSection />
+        <BackgroundShapes />
+      </div>
     </main>
   );
 }
